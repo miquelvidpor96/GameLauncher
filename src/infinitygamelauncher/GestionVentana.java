@@ -14,6 +14,7 @@ import java.awt.event.WindowListener;
  */
 public class GestionVentana implements WindowListener{
     public void windowClosing(WindowEvent e){
+        System.out.println("Exit");
         System.exit(0);
     }
     public void windowActivated(WindowEvent e){}

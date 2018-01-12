@@ -19,8 +19,10 @@ public class Ventana extends Frame{
         super(titulo); //Invoca el contructor de Frame
         this.setBounds(x, y, ancho, alto);//Establece parametros ventana
         this.setLayout(null);//Elimina layout
-        crearBoton();
-        this.setVisible(true);
+        crearBoton();//metodo
+        GestionVentana gv = new GestionVentana(); //crear instancia de la clase GestionVentana
+        this.addWindowListener(gv);//Asociar el listener con el item
+        this.setVisible(true);//hacer visible
     }
     
     public void crearBoton(){
