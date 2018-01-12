@@ -5,6 +5,7 @@
  */
 package infinitygamelauncher;
 
+import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
@@ -12,15 +13,17 @@ import java.awt.event.WindowListener;
  *
  * @author Miquel Vidal
  */
-public class GestionVentana implements WindowListener{
+public class GestionVentana extends WindowAdapter{
     public void windowClosing(WindowEvent e){
         System.out.println("Exit");
         System.exit(0);
     }
-    public void windowActivated(WindowEvent e){}
-    public void windowDeactivated(WindowEvent e){}
-    public void windowClosed(WindowEvent e){}
-    public void windowIconified(WindowEvent e){}
-    public void windowDeiconified(WindowEvent e){}
-    public void windowOpened(WindowEvent e){}
+/*
+public void windowActivated(WindowEvent e){}
+public void windowDeactivated(WindowEvent e){}
+public void windowClosed(WindowEvent e){}
+public void windowIconified(WindowEvent e){}
+public void windowDeiconified(WindowEvent e){}
+public void windowOpened(WindowEvent e){}
+*/
 }
